@@ -1,17 +1,9 @@
 import React from 'react'
-import { NavLink, useRoutes } from 'react-router-dom';
 import "../style/LoginSection.css"
 import Header from '../components/Header1'
 import Footer from '../components/Footer1'
-import Register from './RegisterSection'
 
 
-const RegisterRoute =()=>{
-    let route =useRoutes([
-        { path: '/Register', element: <Register /> },
-    ])
-    return routes
-}
 
 function LoginSection() {
   return (
@@ -20,7 +12,7 @@ function LoginSection() {
         <main>
          <form className='form'>
                 <h2 className='form_title'>Inicia Sesion</h2>
-                <p className='form_paragraph'>Aun no tienes cuenta <NavLink exact to="/Register"> Entra aqui</NavLink></p>
+                <p className='form_paragraph'>Aun no tienes cuenta <a href=''> Entra aqui</a></p>
                 
                 <div className='form_container'>
                     <div className='form_group'>
