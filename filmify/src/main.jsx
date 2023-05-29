@@ -1,13 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Login from './pages/LoginSection'
-import Register from './pages/RegisterSection'
+import App from './App'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 
   <React.StrictMode>
-    <Login></Login>
+    <App></App>
   </React.StrictMode>,
 
 )

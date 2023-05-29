@@ -1,0 +1,50 @@
+:root{
+    /* Colores proyecto */
+    --Navbar:#79548e;
+    --Boton:#641da3;
+    --Hover:#5a189a;
+}
+body{
+    margin: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--Navbar);
+}
+img{
+    margin: 8px 8px 8px 8px;
+    width: 200px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+li{
+    margin-right: 2em;
+}
+.nav-link{
+    padding: .5em;
+    border-radius: .5em;
+    background-color:var(--Boton);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+}
+.nav-link:hover{
+    background-color: var(--Hover);
+    animation: pulse 0.3s infinite;
+}
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }

@@ -1,10 +1,10 @@
 import "../style/LoginSection.css"
-import Header from '../components/Header1'
-import Footer from '../components/Footer1'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 function LoginSection() {
   return (
     <div className="app-container">
-        <Header></Header>
+        <Header/>
         <main>
          <form className='form' action="">
                 <h2 className='form_title'>Unete a Filmify</h2>                
@@ -33,7 +33,7 @@ function LoginSection() {
                 </div>
             </form>
          </main>
-        <Footer></Footer>
+        <Footer/>
     </div>
          
   )

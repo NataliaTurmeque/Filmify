@@ -1,18 +1,19 @@
 import React from 'react'
 import "../style/LoginSection.css"
-import Header from '../components/Header1'
-import Footer from '../components/Footer1'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+import { NavLink } from 'react-router-dom'
 
 
 
 function LoginSection() {
   return (
     <div className="app-container">
-        <Header></Header>
+        <Header/>
         <main>
          <form className='form'>
                 <h2 className='form_title'>Inicia Sesion</h2>
-                <p className='form_paragraph'>Aun no tienes cuenta <a href=''> Entra aqui</a></p>
+                <p className='form_paragraph'>Aun no tienes cuenta <NavLink to='/Register'> Entra aqui</NavLink></p>
                 
                 <div className='form_container'>
                     <div className='form_group'>
@@ -28,9 +29,10 @@ function LoginSection() {
                     <input type="submit" className="form_submit"  value="Entrar"/>
                 </div>
             </form>
-         </main>
-        <Footer></Footer>
+        </main>
+        <Footer/>
     </div>
+    
          
   )
 }
