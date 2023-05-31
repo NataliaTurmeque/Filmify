@@ -10,7 +10,6 @@ const AppRoutes =()=>{
     { path: '/', element: <Home/>},
     { path: '/Login', element: <Login/>},
     { path: '/Register', element: <Registro/>},
-
   ])
   return routes
 }
