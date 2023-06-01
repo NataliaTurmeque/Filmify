@@ -6,7 +6,8 @@ import '../style/Header2.css'
 function MainNavBar() {
   return (
     <nav>
-        <div className='logo'> <img src={Logo} alt="" /></div>
+        <div className='logo'> 
+        <a href='http://localhost:5173'> <img src={Logo} alt="" /> </a> </div> 
         <ul className='sites'>
             <li className="nav-item">
               <NavLink className="nav-link" to="/Login">Iniciar Sesion</NavLink>
