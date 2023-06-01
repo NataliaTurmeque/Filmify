@@ -4,7 +4,6 @@ import Home from './pages/Home'
 import Login from './pages/LoginSection'
 import Registro from './pages/RegisterSection'
 
-
 const AppRoutes =()=>{
   let routes = useRoutes([
     { path: '/', element: <Home/>},
