@@ -25,6 +25,10 @@ li{
     margin-right: 2em;
 }
 .nav-link{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: .5em;
     border-radius: .5em;
     border-top: 5px outset #C77DFF;
@@ -54,5 +58,12 @@ li{
 .option:hover{
     background-color:grey;
 }
+.shoping-car{
+    margin: 0;
+    margin-right:10px;
+    width: 26px;
+
+}
+
 
 
