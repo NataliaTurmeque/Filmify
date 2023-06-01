@@ -7,7 +7,7 @@ import { NavLink, Navigate, useNavigate } from 'react-router-dom'
 
 
 function LoginSection() {
-    const navigate = useNavigate();
+    const Navigate = useNavigate();
     function check(){
         var storedName = localStorage.getItem('name');
         var storedPw = localStorage.getItem('pw');
@@ -19,7 +19,7 @@ function LoginSection() {
         if(userName.value == storedName && userPw.value == storedPw){
             alert('Bienvenido.');
     
-            navigate('/Register');
+            Navigate('/Index');
     
         }else{
             alert('Email/Password Incorrectos');

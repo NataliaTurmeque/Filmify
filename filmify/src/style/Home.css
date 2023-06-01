@@ -1,83 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
 
 
-  .primerTitulo{
+  .title1{
+    padding: 10px;
+    background-color: #000000;
+    border-top: 7px outset #C77DFF;
+    border-right: 10px outset #C77DFF;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
-    color: #79548e;
+    color:grey;
     margin: 50px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 60px;
   }
 
-  .primerTitulo2{
+  .title2{
+    padding: 10px;
+    background-color: #000000;
+    border-top: 7px outset #C77DFF;
+    border-right: 10px outset #C77DFF;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
-    color: #fffeff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    
+    color:grey;
+    margin: 50px;
+    border-radius: 60px;
   }
-.div-four{
-  background-color: var(--Navbar);
-  margin-top:60px;
-  margin-left: 90px;
-  margin-right: 90px;
-  padding: 20px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 60px;
-  border-bottom-left-radius: 80px;
-  border-bottom-right-radius: 40px;
-}
 
-
-  /* ---------------------------------------------------------- */
-  
-.card {
-    position: relative;
-    width: 200px;
-    height: 300px;
-    overflow: hidden;
-
-    
+  .div-four{
+    height: 100vh;
   }
-  
-  .card-image {
-    width: 100%;
-    height: 100%;
-    transition: transform 0.3s ease;
-    
-  }
-  
-  .card:hover .card-image {
-    transform: scale(1.5);
-   ;
-  }
-  
-  .card-description {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 2px;
-    width: 232px;
-    height: 300px;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    
-  }
-  
-  .card:hover .card-description {
-    opacity: 10;
-  }
-  p{
-    margin: 10px;
-  }
-.sectionL{
-    margin-top: 100px;
-    
-}
-.div-three{
-    margin-top:90px;
-}

@@ -1,9 +1,13 @@
 import "../style/LoginSection.css"
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import { NavLink, Navigate, useNavigate } from 'react-router-dom'
+
 
 function store(){
-
+    const Navegate =useNavigate();
+    var nombre = document.getElementById('name')
+    var Lastname = document.getElementById('name')
     var name = document.getElementById('user');
     var pw = document.getElementById('password');
     var lowerCaseLetters = /[a-z]/g;
@@ -32,9 +36,12 @@ function store(){
         alert('El password debe tener una mayuscula');
 
     }else{
+        localStorage.setItem("nombre",nombre.value)
+        localStorage.setItem("lastname",Lastname.value)
         localStorage.setItem('name', name.value);
         localStorage.setItem('pw', pw.value);
-        alert('Bienvenido a FIlmify');
+        alert('Bienvenido a Filmify');
+        Navigate('/Login');
     }
 }
 
@@ -59,12 +66,12 @@ function LoginSection() {
                         <span className="form_line"></span>
                     </div>
                     <div className='form_group'>
-                        <input type="text" id="user" className="form_input" placeholder=" "/>
+                        <input type="email" id="user" className="form_input" placeholder=" "/>
                         <label htmlFor="name" className="form_label">Email:</label>
                         <span className="form_line"></span>
                     </div>
                     <div className='form_group'>
-                        <input type="text" id="password" className="form_input" placeholder=" "/>
+                        <input type="password" id="password" className="form_input" placeholder=" "/>
                         <label htmlFor="name" className="form_label">Password:</label>
                         <span className="form_line"></span>
                     </div>

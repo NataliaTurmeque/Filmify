@@ -6,11 +6,11 @@ function Footer1() {
     <footer>
       <div className='info'>
         <ul>
-            <li><a href="">Acerca de nosotros</a></li>
-            <li><a href="">Contactos</a></li>
-            <li><a href="">Servicios</a></li>
-            <li><a href="">Planes</a></li>
-            <li><a href="">Ayuda al consumidor</a></li>    
+            <li><a className='option' href="">Acerca de nosotros</a></li>
+            <li><a className='option' href="">Contactos</a></li>
+            <li><a className='option'href="">Servicios</a></li>
+            <li><a className='option' href="">Planes</a></li>
+            <li><a className='option' href="">Ayuda al consumidor</a></li>    
           </ul>
       </div>
       <div className='names'>

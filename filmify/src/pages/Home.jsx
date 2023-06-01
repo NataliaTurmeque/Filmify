@@ -35,7 +35,7 @@ const Home = () => {
       id:5,
       title: "The last of us",
       imageUrl: "https://pics.filmaffinity.com/the_last_of_us-722385305-mmed.jpg",
-      description:" Serie : La historia de 'The Last of Us' tiene lugar veinte años después de que la civilización moderna haya sido destruida. Joel, un superviviente de carácter recio, es contratado para sacar de contrabando a Ellie, una niña de 14 años, fuera de una opresiva zona de cuarentena. Lo que comienza como un pequeño trabajo pronto se convierte en un viaje brutal y desgarrador, ya que ambos deben atravesar los EE. UU. y depender el uno del otro para sobrevivir.",
+      description:" Serie : La historia de 'The Last of Us' tiene lugar veinte años después de que la civilización moderna haya sido destruida. Joel, un superviviente de carácter recio, es contratado para sacar de contrabando a Ellie, una niña de 14 años, fuera de una opresiva zona de cuarentena. Lo que comienza como un pequeño trabajo pronto se convierte en un viaje brutal y desgarrador.",
     },{
       id:6,
       title: "Breaking bad",
@@ -45,7 +45,7 @@ const Home = () => {
       id:7,
       title: "Lalaland",
       imageUrl: "https://es.web.img3.acsta.net/pictures/16/11/30/17/44/581119.jpg",
-      description:" Película: Mia y Sebastian son dos jóvenes que quieren abrirse camino en el mundo de Hollywood. Mia es una joven aspirante a actriz que trabaja como camarera mientras acude a castings y Sebastian toca el piano en bares. Un día sus caminos se cruzan e inmediatamente se enamoran. Los dos trabajan juntos para hacer realidad sus sueños, pero pronto se dan cuenta de que el mundo del arte pide sacrificios que ponen en peligro su relación.",
+      description:" Película: Mia y Sebastian son dos jóvenes que quieren abrirse camino en el mundo de Hollywood. Mia es una joven aspirante a actriz que trabaja como camarera mientras acude a castings y Sebastian toca el piano en bares.",
     },{
       id:8,
       title: "Peaky Blinders",
@@ -61,10 +61,9 @@ const Home = () => {
       title: "Avatar 2",
       imageUrl: "https://es.web.img3.acsta.net/pictures/22/11/02/15/37/0544148.jpg",
       description:" Película : Jake Sully y Ney'tiri han formado una familia y hacen todo lo posible por permanecer juntos. Sin embargo, deben abandonar su hogar y explorar las regiones de Pandora cuando una antigua amenaza reaparece.",
-    }
+    },
           // Agrega más objetos de películas aquí
   ];
-
   const settings = {
     dots: false,
     infinite: true,
@@ -76,50 +75,29 @@ const Home = () => {
     centerMode: true,
     centerPadding: '60px',
     responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          centerPadding: '40px',
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          centerPadding: '20px',
-        },
-      },
     ],
   };
 
   return (
     <div className="home">
       <Header></Header>
-       <h1 className="primerTitulo">Tus series y películas favoritas a tan solo un click</h1>
-      <div className="carousel-container">
-        <Slider {...settings}>
-          {movies.map((movie) => (
-            <div className="card" key={movie.id}>
-              <img src={movie.imageUrl} alt={movie.title} className="card-image" />
-              <div className="card-description">
-                <p>{movie.description}</p>
+      <h1 className='title1'>FILMIFY</h1>
+      <div className='slider-container'>
+        <Slider className='slider-images' {...settings}>
+            {movies.map((movie) => (
+              <div className="card" key={movie.id}>
+                  <img src={movie.imageUrl} alt={movie.title} className="card-image" />
+                  <div className="card-description">
+                    <p className='MovieTitle'>{movie.title}</p>
+                    <p className='MovieDescrip'>{movie.description}</p>
+                  </div>
               </div>
-            </div>
-          ))}
-        </Slider>
-        <div className='div-four'> <h1 className='primerTitulo2'>Información acerca de nosotros</h1>
-               </div>
+            ))}
+          </Slider>
       </div>
-      <section className="sectionL"id="seccion-destino">
-   
-</section>
-<div className='div-three'>
-<Cards></Cards>
-<Footer/>
-</div>
+           <h1 className='title2'>ACERCA DE</h1>
+           <Cards/>
+        <Footer/>
     </div>
   );}
 
