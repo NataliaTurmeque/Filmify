@@ -1,5 +1,6 @@
 import React from "react";
 import "../style/cards.css";
+import { NavLink } from 'react-router-dom'
 
 function Cards (){
     return(
@@ -25,6 +26,7 @@ function Cards (){
         </div>
         <p className="title-dos">Precios</p>
         <p className="text-dos">El precio varia dependiendo del paquete que elijas, para saber más te invitamos a crear una cuenta en Filmify </p>
+        <p className="text-dos"><NavLink  className ="Letter"to="/Register">Crea tu cuenta aquí</NavLink></p>
       </div>
 
 
@@ -35,7 +37,8 @@ function Cards (){
               <path d="M8 17h8M12 17v3" /></svg>
           </div>
             <p className="title-dos-exc">¿Qué puedes ver?</p>
-            <p className="text-dos-exc">Hay un repertorio bastante amplio de películas y series, sin embargo, depende de cada subscricion que puedes ver. Te invitamos a crear tu cuenta en Filmify y ver nuestros planes</p>
+            <p className="text-dos-exc">Hay un repertorio bastante amplio de películas y series, sin embargo, depende de cada subscricion que puedes ver. Te invitamos a crear tu cuenta en Filmify y ver nuestros planes <NavLink  className ="Letter" to="/Register">Crea tu cuenta aquí</NavLink></p>
+            
       </div>
 </div>
     )

@@ -1,0 +1,90 @@
+.Subcard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+    height: 410px;
+    padding: 20px 1px;
+    margin: 10px;
+    text-align: center;
+    position: relative;
+
+    box-shadow: 0 10px 15px -3px #79548e,0 4px 6px -4px #79548e;
+    border-radius: 10px;
+    background-color: #f4f4f5;
+    background: linear-gradient(360deg, #7a2cbf 20%, #79548e 70%);
+  }
+  .Subcontent {
+    padding: 20px;
+  }
+  
+  .Subcontent .Subprice {
+    color: white;
+    font-weight: 800;
+    font-size: 50px;
+    text-shadow: 0px 0px 10px #5a189a;
+  }
+  
+  .Subcontent .Subdescription {
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 10px;
+    font-size: 17px;
+  
+  }
+  .list{
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 10px;
+    font-size: 17px;
+    text-align: start;
+  }
+  
+  .Subcontent .Subtitle {
+    font-weight: 800;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.585);
+    margin-top: 10px;
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+  
+  .Subbutton {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .75rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #5a189a;
+    border-radius: 0.5rem;
+    width: 90%;
+    text-shadow: 0px 4px 18px #2c3442;
+    bottom: 10px;
+    position: relative;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .Subbutton:hover {
+    background-color: #8000ff;
+  }
+.containerPrice{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+@media screen and (max-width: 768px) {
+  .containerPrice {
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+}
+  

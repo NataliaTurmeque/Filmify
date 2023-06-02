@@ -6,8 +6,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Cards from '../components/cards';
-import Footer from '../components/Footer'
-
+import Footer from '../components/Footer';
 
 const Home = () => {
   const movies = [
@@ -97,6 +96,7 @@ const Home = () => {
       </div>
            <h1 className='title2'>ACERCA DE</h1>
            <Cards/>
+           
         <Footer/>
     </div>
   );}

@@ -1,0 +1,39 @@
+{
+   "precios":[
+{
+    "id": 1,
+    "img": "PlanP.png",
+    "title": "Plan Películas",
+    "price": 3000,
+    "description":"Este plan incluye:",
+    "item1":"Todos los dispositivos",
+    "item2" :"3 dispositivos a la vez",
+    "item3" :"Alta definición y 4K",
+    "item4" :"Descarga hasta 30 títulos",
+    "item5" :"5 Perfiles",
+    "button" :"hola" 
+},{
+    "id": 2,
+    "img": "PlanS.png",
+    "title": "Plan Series",
+    "price": 5000,
+    "description":"Este plan incluye:",
+    "item1":"Todos los dispositivos",
+    "item2":"3 dispositivos a la vez",
+    "item3":"Alta definición y 4K",
+    "item4":"Descarga hasta 30 títulos",
+    "item5":"5 Perfiles"
+},{
+    "id": 3,
+    "img": "PlanC.png",
+    "title": "Plan Combo",
+    "price": 7000,
+    "description":"Este plan incluye:",
+    "item1":"Todos los dispositivos",
+    "item2":"4 dispositivos a la vez",
+    "item3":"Alta definición y 4K",
+    "item4":"Descarga ilimitadas de series y películas",
+    "item5":"6 Perfiles"
+}
+]
+}
