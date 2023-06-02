@@ -19,7 +19,7 @@ function Navbar() {
         </div> 
         <ul className='sites'>      
             <li className="nav-item">
-              <NavLink className="nav-link" to="/">Catalogo</NavLink>
+              <NavLink className="nav-link" to="">Catalogo</NavLink>
             </li>    
             <li className="nav-item">
             <a className="nav-link" href='http://localhost:5173/products'> Planes</a>
@@ -29,7 +29,7 @@ function Navbar() {
               
             </li> 
             <li className="nav-item">
-              <NavLink className="nav-link" to="/">Cerrar sesion</NavLink>
+              <NavLink className="nav-link" to="">Cerrar sesion</NavLink>
             </li>   
         </ul>
     </nav>

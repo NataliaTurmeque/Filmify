@@ -17,8 +17,6 @@ function Index() {
           <MovieCard></MovieCard>
       </div>
       <h1>colocar api y card de api</h1>
-      <h1>hacer tarjetas de planes(video)</h1>
-      <h1>hacer el carrito de compra de esa tarjeta</h1>
       <Footer></Footer>
     </div>
   
