@@ -1,18 +1,25 @@
 import React , { useContext }from "react";
-import Navbar from "../components/Navbar";
 import OrderCard from "../components/OrderCard";
-import { shoppingCartContex } from "../context";
+import { shoppingCartContex } from "../context"; 
+import "../style/Home.css"
+
 
 function CartPage (){
 
-const context = useContext(shoppingCartContex);
-console.log(context.cartProducts)
+     const contex = useContext(shoppingCartContex)
+    console.log('Todos los items del carrito', contex.cartProducts)
+
 
     return(
       <div>
-        <Navbar></Navbar>
     <h1 className='title1'>Los productos que tienes en el carrito son:</h1>
-    <OrderCard></OrderCard>
+    <div>
+    {contex.cartProducts.map(product => (
+      
+        <OrderCard key={product.id}></OrderCard>))}
+
+    
+    </div>
       </div>
     )
 }

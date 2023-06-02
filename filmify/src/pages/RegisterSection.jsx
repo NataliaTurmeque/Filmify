@@ -5,6 +5,7 @@ import { NavLink, Navigate, useNavigate } from 'react-router-dom'
 
 
 function store(){
+    
     const Navegate =useNavigate();
     var nombre = document.getElementById('name')
     var Lastname = document.getElementById('name')

@@ -4,23 +4,24 @@ import { shoppingCartContex } from "../context";
 
 
 
-function SubsCard (data){
+const SubsCard = (data) =>{
+    
     const contex = useContext(shoppingCartContex)
 
     const addProductsToCart = (productsData) => {
         contex.setCount(contex.count + 1)
         contex.setCartProducts([...contex.cartProducts, productsData])
-    
-    }
 
+    }
+  
     return(
 <div className="containerSubCards">
-  <div class="Subcard" >
-  <div class="Subcontent">
-    <div class="Subtitle">{data.data.title}</div>
-    <div class="Subprice">{data.data.price}</div>
-    <div class="Subtitle">por mes</div>
-    <div class="Subdescription">{data.data.description}</div>
+  <div className="Subcard" >
+  <div className="Subcontent">
+    <div className="Subtitle">{data.data.title}</div>
+    <div className="Subprice">{data.data.price}</div>
+    <div className="Subtitle">por mes</div>
+    <div className="Subdescription">{data.data.description}</div>
     <div className="list">
     <li>{data.data.item1}</li>
           <li>{data.data.item1}</li>
@@ -35,7 +36,7 @@ function SubsCard (data){
     </button>
 </div>
 </div>
-    )
+    );
 
 }
 export default SubsCard;

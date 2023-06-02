@@ -22,11 +22,12 @@ function Navbar() {
               <NavLink className="nav-link" to="/">Catalogo</NavLink>
             </li>    
             <li className="nav-item">
-            <a className="nav-link" href='http://localhost:5173/products'> Planes</a>
+            <NavLink className="nav-link" to="/">Planes</NavLink>
             </li>   
             <li className="nav-item">
-              <a className="nav-link" href='http://localhost:5173/cart'><p className='count-navbar'>{contex.count}</p> <img className='shoping-car' src={car} alt=""/>Carrito </a>
-              
+            <NavLink className="nav-link" to="/">
+              <p className='count-navbar'>{contex.count}</p> <img className='shoping-car' src={car} alt=""/>Carrito 
+              </NavLink>
             </li> 
             <li className="nav-item">
               <NavLink className="nav-link" to="/">Cerrar sesion</NavLink>
