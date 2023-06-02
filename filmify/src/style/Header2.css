@@ -17,15 +17,19 @@ img{
     width: 200px;
 }
 ul{
+    margin-bottom: 10px;
     list-style: none;
     display: flex;
-    align-items: center;
 }
 li{
     margin-right: 2em;
 }
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .nav-link{
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,9 +66,7 @@ li{
     margin: 0;
     margin-right:10px;
     width: 26px;
-
 }
-
 .count-navbar{
     font-size: 9px;
 }

@@ -9,16 +9,7 @@ function Index() {
   return (
     <div className='home'>
       <Navbar/>
-      <div className='welcome-info'>
-        <div>Bienvenido {name} {lastname}</div>
-        <div>Tu plan actual es {} </div>
-      </div>
-      <div className='contend'>
-          <MovieCard></MovieCard>
-      </div>
-      <h1>colocar api y card de api</h1>
-      <h1>hacer tarjetas de planes(video)</h1>
-      <h1>hacer el carrito de compra de esa tarjeta</h1>
+         <MovieCard></MovieCard>
       <Footer></Footer>
     </div>
   

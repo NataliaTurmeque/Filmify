@@ -14,12 +14,12 @@ function Navbar() {
   return (
     <nav>
         <div className='logo'> 
-        <NavLink to="/"> <img src={Logo} alt=""/></NavLink>
+        <NavLink to="/Index"> <img src={Logo} alt=""/></NavLink>
         
         </div> 
         <ul className='sites'>      
             <li className="nav-item">
-              <NavLink className="nav-link" to="/">Catalogo</NavLink>
+              <NavLink className="nav-link" to="">Catalogo</NavLink>
             </li>    
             <li className="nav-item">
             <NavLink className="nav-link" to="/">Planes</NavLink>
@@ -30,7 +30,7 @@ function Navbar() {
               </NavLink>
             </li> 
             <li className="nav-item">
-              <NavLink className="nav-link" to="/">Cerrar sesion</NavLink>
+              <NavLink className="nav-link" to="">Cerrar sesion</NavLink>
             </li>   
         </ul>
     </nav>
