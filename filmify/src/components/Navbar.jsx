@@ -14,7 +14,7 @@ function Navbar() {
   return (
     <nav>
         <div className='logo'> 
-        <NavLink to="/"> <img src={Logo} alt=""/></NavLink>
+        <NavLink to="/Index"> <img src={Logo} alt=""/></NavLink>
         
         </div> 
         <ul className='sites'>      

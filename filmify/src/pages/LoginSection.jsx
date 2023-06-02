@@ -2,7 +2,7 @@ import React from 'react'
 import "../style/LoginSection.css"
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import { NavLink, Navigate, useNavigate } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 
 
 
@@ -14,8 +14,7 @@ function LoginSection() {
     
         var userName = document.getElementById('user');
         var userPw = document.getElementById('password');
-        var userRemember = document.getElementById("rememberMe");
-    
+            
         if(userName.value == storedName && userPw.value == storedPw){
             alert('Bienvenido.');
     

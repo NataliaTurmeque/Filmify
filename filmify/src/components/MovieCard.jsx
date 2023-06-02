@@ -17,7 +17,7 @@ function MovieCard() {
   const [movie, setMovie] = useState({ title: 'Cargando peliculas' })
   const [playing, setPlaying] = useState(false)
 
-  //pfuncion para hacer peticion GET ala api
+  //funcion para hacer peticion GET ala api
 
   const fetchMovies = async (searchKey) => {
     const type = searchKey ? 'search' : 'discover'
@@ -73,17 +73,7 @@ function MovieCard() {
 
   //const movies = MoviesData.Search
   return (
-    <div>
-      <h2 className="text-center mt-5 mb-5">Pelicuas 100% legales no fake</h2>
-      {/* buscador */}
-      <form className="container mb-4" onSubmit={searchMovies}>
-        <input
-          type="text"
-          placeholder="Avengers, Pulp Fiction, Hee Hee"
-          onChange={(e) => setSearchKey(e.target.value)}
-        />
-        <button className="btn btn-primary">Search</button>
-      </form>
+    <>
       {/* Aqui va el banner y el reproductor del la pelicula 100% legal */}
       <div>
         <main>
@@ -128,13 +118,13 @@ function MovieCard() {
                         onClick={() => setPlaying(true)}
                         type="button"
                       >
-                        Play Trailer
+                        Ver pelicula
                       </button>
                     ) : (
                       'Sorry, no trailer available'
                     )}
-                    <h1 className="text-white">{movie.title}</h1>
-                    <p className="text-white">{movie.overview}</p>
+                    <h1 className=" titleMovie text-white">{movie.title}</h1>
+                    <p className="descMovie text-white">{movie.overview}</p>
                   </div>
                 </div>
               )}
@@ -142,18 +132,31 @@ function MovieCard() {
           ) : null}
         </main>
       </div>
+            {/* buscador */}
+            <form className=" navInput container mt-4 mb-4" onSubmit={searchMovies}>
+                <input
+                  type="text"
+                  placeholder="Avengers, Pulp Fiction, Hee Hee"
+                  onChange={(e) => setSearchKey(e.target.value)}
+                />
+                <button className="Buttom-search">Buscar</button>
+              </form>
       {/* contenedor de tarjetas de pelicula */}
       <div className="container mt-3">
         <div className="row">
           {movies.map((movie) => (
-            <div key={movie.id} className="col-md-2 mb-5" onClick={()=>selectMovie(movie)}>
+            <div
+              key={movie.id}
+              className="col-md-2 mb-5"
+              onClick={() => selectMovie(movie)}
+            >
               <img src={`${URL_IMAGE + movie.poster_path}`} alt="" />
               <h4 className="text-center">{movie.title}</h4>
             </div>
           ))}
         </div>
       </div>
-    </div>
+    </>
   )
 }
 
